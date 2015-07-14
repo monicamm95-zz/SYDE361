@@ -5,55 +5,37 @@
 	<link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
 	<link rel="stylesheet" type="text/css" href="styles.css">
 	<link href='http://fonts.googleapis.com/css?family=Roboto:500,400' rel='stylesheet' type='text/css'>
+
 	<title>Safety Check</title>
 </head>
 
 <body>
 	<header>
-		<nav class="navbar">
+		<nav class="navbar tabtop">
 			<div class="container">
 				<a href="#"><img src="Images/menu.png"></a>
-				<h1>Dashboard</h1>	
+				<h1>Site #1</h1>
+				<a href="#" class="worker-icon"><img src="Images/workers.png"></a>
+				<div class="filter-icon">
+					<img src="Images/filter.png">
+				</div>	
+			</div>
+		</nav>
+		<nav class="tabs">
+			<div class="list-tab tab">
+				<h2 class="selected">LIST</h2>
+				<div class="selected-tip"></div>
+			</div>
+			<div class="map-tab tab">
+				<h2 class="unselected">MAP</h2>
+			</div>
+			<div class="graph-tab tab">
+				<h2 class="unselected">GRAPH</h2>
 			</div>
 		</nav>
 	</header>
 
-	<div class="dashboard-top">
-		<div class="safety">
-			<img src="Images/caution-status.png">
-			<div class="status">
-				<h3>Safety Status:</h3>
-				<h2>CAUTION</h2>
-				<p>2 hazards detected</p>
-			</div>
-		</div>
-
-		<div class="hazard">
-			<div class="color orange"></div>
-			<div class="info">
-				<h5 class="time">2:34 pm</h5>
-				<h4>H2S Detected</h4>
-				<h5 class="ppm">7 ppm</h5>
-			</div>
-		</div>
-
-		<div class="hazard">
-			<div class="color yellow"></div>
-			<div class="info">
-				<h5 class="time">2:34 pm</h5>
-				<h4>H2S Detected</h4>
-				<h5 class="ppm">7 ppm</h5>
-			</div>
-		</div>
-	</div>
-
-	<div class="divider">
-		<a href="list.html"><img src="Images/forward-arrow.png"></a>
-		<h3>My Site</h3>
-
-	</div>
-
-	<div class="feed">
+	<div class="hazard-list">
 		<div class="hazard">
 			<div class="color orange"></div>
 			<div class="info">
