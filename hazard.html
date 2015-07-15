@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="styles.css">
+	<link href='http://fonts.googleapis.com/css?family=Roboto:500,400' rel='stylesheet' type='text/css'>
+	<title>Safety Check</title>
+</head>
+
+<body>
+	<header>
+		<nav class="navbar">
+			<div class="container">
+				<a href="javascript:javascript:history.go(-1)"><img src="Images/back-arrow.png"></a>
+				<h1>H2S Detected</h1><!--H2S should vary!-->	
+			</div>
+		</nav>
+	</header>
+
+	<div class="container hazardinfo">
+		<div class="details">
+			<img src="Images/levels.png">
+			<p>7 ppm</p> <!--populate!-->
+		</div>
+		<div class="details">
+			<img src="Images/time.png">
+			<p>July 9, 2015, 2:34 pm</p> <!--show current date!-->
+		</div>
+		<div class= "details">
+			<img src="Images/detectedby.png">
+			<p>Detected by John Smith</p>
+		</div>
+
+		<div class="recommend">
+			<h4>Recommended Safety Procedure</h4>
+			<p>Continue to monitor gas levels closely. Be prepared to evacuate if 10ppm is reached.</p>
+			<h4>Predictions</h4>
+			<p>From analysing detection history, it is estimated that H2S levels will reach 10ppm at 4:45 pm.</p>
+		</div>
+
+		<div class="map">
+			<img src="Images/infomap.png">
+		</div>
+
+		<div class="notes">
+			<h4>Notes</h4>
+			<img src="Images/janet.png">
+			<div class="notehead">
+				<p>Janet Perkins</p><!-- If we have time, this will vary !-->
+				<h5>2:54 pm</h5>
+			</div>
+			<p>This is currently being monitored by personnel on site.</p>
+			<textarea>
+			</textarea>
+			<button type="button">ADD NOTE</button>
+		</div>
+	</div>
+
+</body>
+</html>
