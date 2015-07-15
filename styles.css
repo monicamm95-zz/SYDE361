@@ -9,7 +9,7 @@
 }
 
 body{
-	line-height: 1.42857;
+	line-height: 1.3;
 	font-family: "Roboto", sans-serif;
 	color: #000000;
 	background-color:#FAFAFA;
@@ -58,6 +58,12 @@ p{
 	color: #000000;
 	opacity: 0.87;
 }
+
+a, a:hover{
+	text-decoration: none;
+	color: inherit;
+}
+
 /*--NAV BAR--*/
 
 .navbar{
@@ -66,6 +72,8 @@ p{
 	line-height: 56px;
 	width: 100%;
 	box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+	border-radius: 0;
+	margin: 0;
 }
 
 .navbar img{
@@ -74,10 +82,9 @@ p{
 
 .navbar.tabtop{
 	box-shadow: none;
-	margin: 0;
 }
 
-.filter-icon{
+.icon-left{
 	display: inline-block;
 	float: right;
 	margin-right: 32px;
@@ -87,32 +94,11 @@ p{
 	height: 20px;
 }
 
-.worker-icon{
+.icon-right{
 	float: right;
 	display: inline-block;
 }
 
-/*.tabs {
-  width: 50%;
-  margin-left: 20%;
-  position: relative;
-  display: flex;
-  top: -106px;
-}
-
-.tab h2 {
-  cursor: pointer;
-  color: rgba(255,255,255,0.8);
-  background-color: #068894;
-  box-sizing: border-box;
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  height: 48px;
-  transition: color 0.2s ease;
-  width: 100%;
-}*/
 .tabs{
 	width: 100%;
 	height: 48px;
@@ -142,6 +128,7 @@ p{
 	background-color: #e9662c;
 	margin-top: -2px;
 }
+
 /*--SAFETY STATUS--*/
 .dashboard-top{
 	margin: 16px 16px 12px;
@@ -159,7 +146,7 @@ p{
 
 }
 
-.safety .status{
+.safety .status, .safety .site{
 	display: inline-block;
 	margin-left: 16px;
 	vertical-align: middle;
@@ -176,6 +163,36 @@ p{
 	margin-bottom: 2px;
 }
 
+.site-list{
+	padding-top: 16px;
+}
+
+.safety .site h2{
+	font-size: 18px;
+	opacity: 0.87;
+	margin-bottom: 4px;
+}
+
+.safety .site span{
+	font-weight: 500;
+	opacity: 0.87;
+}
+
+.caution .site span{
+	color: #e9662c;
+}
+
+.safe .site span{
+	color: #00ac65;
+}
+
+.danger .site span{
+	color: #c63636;
+}
+
+.site-list .safety{
+	margin-bottom: 8px;
+}
 /*--HAZARDS--*/
 .hazard{
 	height: 60px;
@@ -184,6 +201,10 @@ p{
 	border-radius: 2px;
 	/*padding: 12px 16px 12px 20px;*/
 	box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+}
+
+.hazard-list{
+	padding: 8px 16px 24px;
 }
 
 .color{
@@ -216,7 +237,11 @@ p{
 	vertical-align: top;
 }
 
-.ppm{
+.sitenum{
+	float: right;
+}
+
+.ppm, .sitenum{
 	margin-top: 4px;
 }
 
@@ -240,6 +265,4 @@ p{
 	padding-top: 4px;
 }
 
-.hazard-list{
-	padding: 8px 16px 24px;
-}
+

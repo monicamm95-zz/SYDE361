@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="styles.css">
+	<link href='http://fonts.googleapis.com/css?family=Roboto:500,400' rel='stylesheet' type='text/css'>
+	<title>Safety Check</title>
+</head>
+
+<body>
+	<header>
+		<nav class="navbar">
+			<div class="container">
+				<a href="#"><img src="Images/menu.png"></a>
+				<h1>Site List</h1>	
+				<div class="add-icon icon-right">
+					<img src="Images/add.png">
+				</div>	
+				<div class="filter-icon icon-left">
+					<img src="Images/filter.png">
+				</div>	
+			</div>
+		</nav>
+	</header>
+	
+	<div class="container site-list">
+
+		<a href="list.html">
+		<div class="safety caution">
+			<img src="Images/caution-status.png">
+			<div class="site">
+				<h2>Site #1</h2>
+				<p>Safety Status: <span>CAUTION</span></p>
+				<p>2 hazards detected</p>
+				<p>5 workers on site</p>
+			</div>
+		</div>
+		</a>
+
+		<div class="safety safe">
+			<img src="Images/safe-status.png">
+			<div class="site">
+				<h2>Site #2</h2>
+				<p>Safety Status: <span>SAFE</span></p>
+				<p>0 hazards detected</p>
+				<p>7 workers on site</p>
+			</div>
+		</div>
+
+		<div class="safety danger">
+			<img src="Images/danger-status.png">
+			<div class="site">
+				<h2>Site #3</h2>
+				<p>Safety Status: <span>DANGER</span></p>
+				<p>1 hazards detected</p>
+				<p>4 workers on site</p>
+			</div>
+		</div>
+	</div>
+	
+</body>
+</html>
