@@ -129,6 +129,121 @@ a, a:hover{
 	margin-top: -2px;
 }
 
+/*--NAVIGATION DRAWER--*/
+#dashboard-checkbox, #list-checkbox, #worker-checkbox,
+#sites-checkbox, #history-checkbox {
+  display: none;
+}
+
+#dashboard-checkbox:checked ~ #dashboard-overlay,
+#list-checkbox:checked ~ #list-overlay,
+#worker-checkbox:checked ~ #worker-overlay,
+#sites-checkbox:checked ~ #sites-overlay,
+#history-checkbox:checked ~ #history-overlay {
+  display: block;
+}
+
+#dashboard-checkbox:checked ~ .mobile-menu,
+#list-checkbox:checked ~ .mobile-menu,
+#worker-checkbox:checked ~ .worker-menu,
+#sites-checkbox:checked ~ .mobile-menu,
+#history-checkbox:checked ~ .mobile-menu {
+  visibility: visible;
+  -webkit-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
+}
+
+#dashboard-overlay, #list-overlay, #worker-overlay,
+#sites-overlay, #history-overlay {
+  background-color: rgba(0, 0, 0, 0.5);
+  display: none;
+  height: 100%;
+  left: 0;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 100;
+}
+
+.mobile-menu {
+  position: fixed;
+  left: 0;
+  z-index: 101;
+  top: 0;
+  visibility: hidden;
+  width: 300px;
+  height: 100%;
+  background: #e9662c;
+  color: white;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+  -webkit-transform: translate3d(-100%, 0, 0);
+  transform: translate3d(-100%, 0, 0);
+  padding-left: 16px;
+}
+
+.mobile-menu li, .worker-menu li{
+	height: 56px;
+	line-height: 56px;
+	list-style: none;
+	font-size: 14px;
+	font-weight: 500;
+}
+
+.mobile-menu li img{
+	display: inline-block;
+	vertical-align: middle;
+	margin-right: 32px;
+}
+
+/*--WORKER LIST--*/
+.worker-menu {
+  position: fixed;
+  right: 0;
+  z-index: 101;
+  top: 0;
+  visibility: hidden;
+  width: 300px;
+  height: 100%;
+  background: #e9662c;
+  color: white;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+  -webkit-transform: translate3d(100%, 0, 0);
+  transform: translate3d(100%, 0, 0);
+  padding-left: 16px;
+}
+
+.worker-menu{
+	line-height: 56px;
+	padding-right: 16px;
+}
+
+.worker-menu h2{
+	font-weight: 500;
+	font-size: 16px;
+	display: inline-block;
+}
+
+.worker-menu li{
+	font-weight: 400;
+}
+
+.dp{
+	margin-right: 16px;
+	margin-bottom: 3px;
+	vertical-align: middle;
+}
+
+.message, .phone{
+	float: right;
+	display: inline-block;
+}
+
+.phone{
+	margin-right: 22px;
+}
+
 /*--SAFETY STATUS--*/
 .dashboard-top{
 	margin: 16px 16px 12px;
